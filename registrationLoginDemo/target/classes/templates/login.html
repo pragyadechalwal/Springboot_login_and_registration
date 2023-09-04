@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <title>
+            Registration Page
+        </title>
+    </head>
+    <body>
+        <h2>Welcome to login page</h2>
+        <form th:action="@{/loginprocess}" method="post" th:object="${entity}">
+            Enter the user name : <input type ="text" id="username" th:field="*{username}"><br><br>
+            Enter the password : <input type ="password" id="password" th:field="*{password}"><br><br>
+            
+        <button type = submit> Login</button>
+
+    </form>
+    </body>
+</html>
